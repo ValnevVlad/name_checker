@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Проверка имен</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js" defer></script>
+  <script src="js/name_checker.js" defer></script>
+</head>
+
+<body data-theme="light">
+  <div class="theme-toggle" id="themeToggle">
+    <span class="theme-icon" data-theme="light" title="Светлая тема">☀️</span>
+    <span class="theme-icon" data-theme="dark" title="Тёмная тема">🌑</span>
+  </div>
+  
+  <h1>Проверка надежности имени</h1>
+  <p class="instruction">Выберите пол партнера, введите его имя и нажмите кнопку "Проверить"</p>
+
+  <div class="container">
+    <label for="sex">Выберите пол</label>
+    <div class="gender-toggle" id="genderToggle">
+        <div class="gender-option male selected" data-sex="male">
+          ♂ Мужской
+        </div>
+        <div class="gender-option female" data-sex="female">
+          ♀ Женский
+        </div>
+      </div>
+      
+    <label for="name">Введите имя</label>
+    <input type="text" id="name" placeholder="Введите имя" />
+
+    <button id="checkBtn" disabled>Проверить</button>
+
+    <div class="result" id="result"></div>
+  </div>
+</body>
+</html>
